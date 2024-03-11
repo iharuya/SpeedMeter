@@ -47,17 +47,11 @@ class Location: NSObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         if (location.speed >= 0) {
-            speedKmh = location.speed * 3.6
+            let currentSpeedKmh = location.speed * 3.6
+            speedKmh = currentSpeedKmh
             speedAccuracyKmh = location.speedAccuracy * 3.6
-            
-            if let previousLocation = previousLocation {
-                distance += location.distance(from: previousLocation)
-                let timeInterval = location.timestamp.timeIntervalSince(previousLocation.timestamp)
-                let speedKmh = 3.6 * distance / timeInterval
-                speedsKmh.append(speedKmh)
-                let averageSpeedKmh = speedsKmh.reduce(0, +) / Double(speedsKmh.count)
-                self.averageSpeedKmh = averageSpeedKmh
-            }
+            speedsKmh.append(currentSpeedKmh)
+            averageSpeedKmh = speedsKmh.reduce(0, +) / Double(speedsKmh.count)
             
             previousLocation = location
             if startTime == nil {
