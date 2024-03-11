@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SpeedMeterApp: App {
+    @State private var location = Location()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(location)
         }
     }
 }

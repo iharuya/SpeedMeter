@@ -11,6 +11,11 @@
 		4DCEC27E2B9CCC3D00588404 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEC27D2B9CCC3D00588404 /* ContentView.swift */; };
 		4DCEC2802B9CCC3E00588404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DCEC27F2B9CCC3E00588404 /* Assets.xcassets */; };
 		4DCEC2832B9CCC3E00588404 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DCEC2822B9CCC3E00588404 /* Preview Assets.xcassets */; };
+		4DCEC28B2B9CCD1800588404 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCEC28A2B9CCD1800588404 /* CoreLocation.framework */; };
+		4DCEC28D2B9CCE9300588404 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEC28C2B9CCE9300588404 /* Container.swift */; };
+		4DD1763C2B9EEC8A00567670 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD1763B2B9EEC8A00567670 /* Header.swift */; };
+		4DD1763E2B9EED5C00567670 /* SpeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD1763D2B9EED5C00567670 /* SpeedView.swift */; };
+		4DD176402B9EF06B00567670 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD1763F2B9EF06B00567670 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		4DCEC27D2B9CCC3D00588404 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4DCEC27F2B9CCC3E00588404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DCEC2822B9CCC3E00588404 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DCEC28A2B9CCD1800588404 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4DCEC28C2B9CCE9300588404 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		4DD1763B2B9EEC8A00567670 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		4DD1763D2B9EED5C00567670 /* SpeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedView.swift; sourceTree = "<group>"; };
+		4DD1763F2B9EF06B00567670 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCEC28B2B9CCD1800588404 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +48,7 @@
 			children = (
 				4DCEC27A2B9CCC3D00588404 /* SpeedMeter */,
 				4DCEC2792B9CCC3D00588404 /* Products */,
+				4DCEC2892B9CCD1700588404 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +63,9 @@
 		4DCEC27A2B9CCC3D00588404 /* SpeedMeter */ = {
 			isa = PBXGroup;
 			children = (
+				4DCEC28F2B9CCF1600588404 /* Model */,
+				4DCEC28E2B9CCE9800588404 /* Views */,
 				4DCEC27B2B9CCC3D00588404 /* SpeedMeterApp.swift */,
-				4DCEC27D2B9CCC3D00588404 /* ContentView.swift */,
 				4DCEC27F2B9CCC3E00588404 /* Assets.xcassets */,
 				4DCEC2812B9CCC3E00588404 /* Preview Content */,
 			);
@@ -65,6 +78,41 @@
 				4DCEC2822B9CCC3E00588404 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DCEC2892B9CCD1700588404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEC28A2B9CCD1800588404 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DCEC28E2B9CCE9800588404 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEC27D2B9CCC3D00588404 /* ContentView.swift */,
+				4DD176382B9EEB5A00567670 /* Map */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DCEC28F2B9CCF1600588404 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DD1763F2B9EF06B00567670 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DD176382B9EEB5A00567670 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEC28C2B9CCE9300588404 /* Container.swift */,
+				4DD1763B2B9EEC8A00567670 /* Header.swift */,
+				4DD1763D2B9EED5C00567670 /* SpeedView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD1763E2B9EED5C00567670 /* SpeedView.swift in Sources */,
 				4DCEC27E2B9CCC3D00588404 /* ContentView.swift in Sources */,
+				4DCEC28D2B9CCE9300588404 /* Container.swift in Sources */,
+				4DD1763C2B9EEC8A00567670 /* Header.swift in Sources */,
 				4DCEC27C2B9CCC3D00588404 /* SpeedMeterApp.swift in Sources */,
+				4DD176402B9EF06B00567670 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +327,7 @@
 				DEVELOPMENT_TEAM = N43LM5AHFB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "アプリの使用中に位置情報を使うよ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +357,7 @@
 				DEVELOPMENT_TEAM = N43LM5AHFB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "アプリの使用中に位置情報を使うよ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
