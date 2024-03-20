@@ -19,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DC340662BAACCEF003CEBCA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4DC340692BAACEC2003CEBCA /* screenshot-on-tohoku-shinkansen.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-on-tohoku-shinkansen.PNG"; sourceTree = "<group>"; };
 		4DCEC2782B9CCC3D00588404 /* SpeedMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCEC27B2B9CCC3D00588404 /* SpeedMeterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedMeterApp.swift; sourceTree = "<group>"; };
 		4DCEC27D2B9CCC3D00588404 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		4DCEC26F2B9CCC3D00588404 = {
 			isa = PBXGroup;
 			children = (
+				4DC340662BAACCEF003CEBCA /* README.md */,
+				4DC340692BAACEC2003CEBCA /* screenshot-on-tohoku-shinkansen.PNG */,
 				4DCEC27A2B9CCC3D00588404 /* SpeedMeter */,
 				4DCEC2792B9CCC3D00588404 /* Products */,
 				4DCEC2892B9CCD1700588404 /* Frameworks */,
